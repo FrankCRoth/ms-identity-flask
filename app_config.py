@@ -1,6 +1,8 @@
 import os
 
-CLIENT_ID = "Enter_the_Application_Id_here" # Application (client) ID of app registration
+#CLIENT_ID = "Enter_the_Application_Id_here" # Application (client) ID of app registration
+CLIENT_ID = "f42978d7-5e27-484e-bafc-cf98ba42c530" # Application (client) ID of app registration
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
 
 CLIENT_SECRET = "Enter_the_Client_Secret_Here" # Placeholder - for use ONLY during testing.
 # In a production app, we recommend you use a more secure method of storing your secret,
@@ -12,6 +14,7 @@ CLIENT_SECRET = "Enter_the_Client_Secret_Here" # Placeholder - for use ONLY duri
 
 AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app
 # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
+AUTHORITY = "https://login.microsoftonline.com/45597f60-6e37-4be7-acfb-4c9e23b261ea"
 
 REDIRECT_PATH = "/getAToken"  # Used for forming an absolute URL to your redirect URI.
                               # The absolute URL must match the redirect URI you set
